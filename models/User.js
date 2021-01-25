@@ -4,7 +4,7 @@ const Schema = mongoose.Schema
 const notificationsSchema = new Schema({
     from_sender: String,
     content: String,
-    date: String,
+    date: Number,
     my_id: String,
     type: String,
     read: Boolean,

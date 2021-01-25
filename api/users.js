@@ -84,6 +84,7 @@ router.post('/login', (req, res) => {
                         bio: user.bio
                         
                     }
+                    
                     // sign token
                     jwt.sign(payload, JWT_SECRET, { expiresIn: '1h' }, (error, token) => {
                         res.json({
